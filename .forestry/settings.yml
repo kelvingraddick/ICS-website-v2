@@ -4,15 +4,15 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: 
 sections:
+- type: document
+  path: content/general.json
+  label: General
 - type: directory
   path: content/pages
   label: Pages
   create: all
   match: "**/*"
   new_doc_ext: json
-- type: document
-  path: content/general.json
-  label: General
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
