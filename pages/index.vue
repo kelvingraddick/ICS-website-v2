@@ -7,8 +7,8 @@
             Who are we?
           </h2>
           <div class="mt-3 text-lg text-gray-500 sm:mt-4 grid grid-cols-2 divide-x-2 divide-gray-200">
-            <div class="text-left p-3">ICS is a <b>full-service technology provider</b> of innovative solutions to small, mid-sized, and large orgs.</div>
-            <div class="text-left p-3">A company founded on the principle that <b>technology is a tool</b> to help business leaders grow their company.</div>
+            <div v-html="content['Section 1 Left Text']" class="text-left p-3"></div>
+            <div v-html="content['Section 1 Right Text']" class="text-left p-3"></div>
           </div>
         </div>
       </div>
@@ -48,81 +48,86 @@
         </div>
       </div>
     </div>
-    <div class="overflow-hidden">
-      <div class="relative max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+    <div class="py-8overflow-hidden lg:py-16">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+        <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="250" fill="none" viewBox="0 0 404 250">
           <defs>
-            <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
               <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
-          <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+          <rect width="404" height="784" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
         </svg>
-
-        <div class="relative lg:grid lg:grid-cols-3 lg:col-gap-8">
-          <div class="lg:col-span-1">
-            <h3 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-700 sm:text-4xl sm:leading-10">
-              Key message to potential clients
-            </h3>
-          </div>
-          <div class="mt-10 sm:grid sm:grid-cols-2 sm:col-gap-8 sm:row-gap-10 lg:col-span-2 lg:mt-0">
-            <div>
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-              <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">Placeholder</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque. 
-                </p>
-              </div>
+        <div class="relative">
+          <h3 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            Reduce risk and complexity
+          </h3>
+          <p v-html="content['Section 2 Sub-Title']" class="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500"></p>
+        </div>
+        <div class="relative mt-4 sm:mt-6 lg:mt-10">
+          <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
+            <div class="lg:col-start-2">
+              <ul>
+                <li class="sm:mt-30 md:mt-0">
+                  <div class="flex">
+                    <div class="flex-shrink-0">
+                      <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-800 text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 2 Point 1 Icon']" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <p v-html="content['Section 2 Point 1 Text']" class="mt-2 text-base leading-6 text-gray-500"></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-10">
+                  <div class="flex">
+                    <div class="flex-shrink-0">
+                      <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-800 text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 2 Point 2 Icon']" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <p v-html="content['Section 2 Point 2 Text']" class="mt-2 text-base leading-6 text-gray-500"></p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-10">
+                  <div class="flex">
+                    <div class="flex-shrink-0">
+                      <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-800 text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 2 Point 3 Icon']" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <p v-html="content['Section 2 Point 3 Text']" class="mt-2 text-base leading-6 text-gray-500"></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="mt-10 sm:mt-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-              <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">Placeholder</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.
-                </p>
-              </div>
-            </div>
-            <div class="mt-10 sm:mt-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">Placeholder</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.
-                </p>
-              </div>
-            </div>
-            <div class="mt-10 sm:mt-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">Placeholder</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.
-                </p>
-              </div>
+            <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+              <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="250" fill="none" viewBox="0 0 784 250">
+                <defs>
+                  <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                  </pattern>
+                </defs>
+                <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
+              </svg>
+              <img class="relative mx-auto rounded-md" width="490" src="ics-image-2.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="py-12 bg-white">
+    <div class="py-12 bg-gray-50">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-4xl sm:leading-10">
@@ -134,52 +139,34 @@
             <div>
               <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 1 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h5 class="text-xl leading-6 font-medium text-gray-700">Integrity</h5>
-                <p class="mt-2 text-lg leading-7 text-gray-500">
-                  We keep your critical data safe:<br />
-                  • Product Information<br />
-                  • Client details<br />
-                  • Vendor details<br />
-                  • Financial data
-                </p>
+                <h5 v-html="content['Section 3 Point 1 Title']" class="text-xl leading-6 font-medium text-gray-700"></h5>
+                <p v-html="content['Section 3 Point 1 Sub-Title']" class="mt-2 text-lg leading-7 text-gray-500"></p>
               </div>
             </div>
             <div class="mt-10 lg:mt-0">
               <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 2 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h5 class="text-xl leading-6 font-medium text-gray-700">Compliance</h5>
-                <p class="mt-2 text-lg leading-7 text-gray-500">
-                  We ensure your critical systems are compliant:<br />
-                  • Industry<br />
-                  • Legal<br />
-                  • Governmental<br />
-                  • Financial
-                </p>
+                <h5 v-html="content['Section 3 Point 2 Title']" class="text-xl leading-6 font-medium text-gray-700"></h5>
+                <p v-html="content['Section 3 Point 2 Sub-Title']" class="mt-2 text-lg leading-7 text-gray-500"></p>
               </div>
             </div>
             <div class="mt-10 lg:mt-0">
               <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 3 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h5 class="text-xl leading-6 font-medium text-gray-700">Security</h5>
-                <p class="mt-2 text-lg leading-7 text-gray-500">
-                  We secure your critical systems against:<br />
-                  • Ransomware<br />
-                  • Virus<br />
-                  • Hardware Failure<br />
-                  • External Hacking
-                </p>
+                <h5 v-html="content['Section 3 Point 3 Title']" class="text-xl leading-6 font-medium text-gray-700"></h5>
+                <p v-html="content['Section 3 Point 3 Sub-Title']" class="mt-2 text-lg leading-7 text-gray-500"></p>
               </div>
             </div>
           </div>
@@ -201,24 +188,20 @@
             <h4 class="text-2xl leading-8 font-extrabold text-gray-700 tracking-tight sm:text-3xl sm:leading-9">
               Customized solutions
             </h4>
-            <p class="mt-3 text-lg leading-7 text-gray-500">
-              ICS will assist in architecting a Managed IT Solution that is fully customized to your organization’s unique set of requirements. We also become an extension of your internal team
-            </p>
+            <p v-html="content['Section 4 Sub-Title']" class="mt-3 text-lg leading-7 text-gray-500"></p>
             <ul class="mt-10">
               <li>
                 <div class="flex">
                   <div class="flex-shrink-0">
                     <div class="flex items-center justify-center h-14 w-14 text-orange-500">
                       <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 1 Icon']" />
                       </svg>
                     </div>
                   </div>
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium text-gray-700">Optimize technologies</h5>
-                    <p class="mt-2 text-base leading-6 text-gray-500">
-                      Access to best in class solutions
-                    </p>
+                    <h5 v-html="content['Section 4 Point 1 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
+                    <p v-html="content['Section 4 Point 1 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
                   </div>
                 </div>
               </li>
@@ -227,15 +210,13 @@
                   <div class="flex-shrink-0">
                     <div class="flex items-center justify-center h-14 w-14 text-orange-500">
                       <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 2 Icon']" />
                       </svg>
                     </div>
                   </div>
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium text-gray-700">Scale as you grow</h5>
-                    <p class="mt-2 text-base leading-6 text-gray-500">
-                      Right technology at the right time
-                    </p>
+                    <h5 v-html="content['Section 4 Point 2 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
+                    <p v-html="content['Section 4 Point 2 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
                   </div>
                 </div>
               </li>
@@ -244,15 +225,13 @@
                   <div class="flex-shrink-0">
                     <div class="flex items-center justify-center h-14 w-14 text-orange-500">
                       <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 3 Icon']" />
                       </svg>
                     </div>
                   </div>
                   <div class="ml-4">
-                    <h5 class="text-lg leading-6 font-medium text-gray-700">Resources when needed</h5>
-                    <p class="mt-2 text-base leading-6 text-gray-500">
-                      Proactive support & solutions
-                    </p>
+                    <h5 v-html="content['Section 4 Point 3 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
+                    <p v-html="content['Section 4 Point 3 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
                   </div>
                 </div>
               </li>
@@ -267,7 +246,7 @@
               </defs>
               <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
             </svg>
-            <img class="relative mx-auto" width="490" src="/ics-image-1.jpg" alt="">
+            <img class="relative mx-auto rounded-md" width="490" src="/ics-image-1.jpg" alt="">
           </div>
         </div>
       </div>
@@ -276,8 +255,15 @@
 </template>
 
 <script>
+  import Content from '@/content/pages/home.json';
+
   export default {
-    layout: 'home'
+    layout: 'home',
+    data: function() {
+      return {
+        content: Content
+      }
+    }
   }
 </script>
 
