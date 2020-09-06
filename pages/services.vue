@@ -5,9 +5,7 @@
         <div class="space-y-8 sm:space-y-12">
           <div class="space-y-5 sm:space-y-4">
             <h2 class="text-3xl text-gray-700 leading-9 font-extrabold tracking-tight sm:text-4xl">Our services</h2>
-            <p class="text-xl leading-7 text-gray-500">ICS can help - our products & services</p>
           </div>
-					<img class="mx-auto w-full" src="/ics-services-1.png" alt="">
         </div>
       </div>
     </div>
@@ -21,74 +19,78 @@
           </defs>
           <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
         </svg>
-
         <div class="relative lg:grid lg:grid-cols-3 lg:col-gap-8">
           <div class="lg:col-span-1">
             <h3 class="leading-9 tracking-tight text-gray-700 sm:text-4xl sm:leading-10">
-              <i>"We are not a hammer in search of a nail. We are not a pre-determined solution in search of a problem."</i>
+              <i v-html="content['Section 1 Sub-Title']"></i>
             </h3>
           </div>
           <div class="mt-10 sm:grid sm:grid-cols-2 sm:col-gap-8 sm:row-gap-10 lg:col-span-2 lg:mt-0">
             <div>
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 1 Point 1 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">ICS deliver the right solution, not just a solution right now</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-
-                </p>
+                <h4 v-html="content['Section 1 Point 1 Title']" class="text-lg leading-6 font-medium text-gray-700"></h4>
+                <p v-html="content['Section 1 Point 1 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
               </div>
             </div>
             <div class="mt-10 sm:mt-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 1 Point 2 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">
-									Our goal is to make your technology work better for the people, products and processes<br />
-									– driving efficiency throughout the business
-								</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-
-                </p>
+                <h4 v-html="content['Section 1 Point 2 Title']" class="text-lg leading-6 font-medium text-gray-700"></h4>
+                <p v-html="content['Section 1 Point 2 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
               </div>
             </div>
             <div class="mt-10 sm:mt-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 1 Point 3 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">We encourage our clients to think in terms of “Business Challenges” not “technology issues”</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  "What business problem are you trying to solve?”<br />
-									Our Role is to assist you to: <br />
-									Define a Problem / Scope Alternatives / Deliver Solution<br />
-									You may have some of the pieces in place – we can help you finish the puzzle.
-                </p>
+                <h4 v-html="content['Section 1 Point 3 Title']" class="text-lg leading-6 font-medium text-gray-700"></h4>
+                <p v-html="content['Section 1 Point 3 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
               </div>
             </div>
             <div class="mt-10 sm:mt-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 1 Point 4 Icon']" />
                 </svg>
               </div>
               <div class="mt-5">
-                <h4 class="text-lg leading-6 font-medium text-gray-700">Initial assessment of your entire infrastructure and address issues on your terms</h4>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  Completely Transparent Process<br />
-									– you dictate the goals, we provide the roadmap and we take the journey together.
-                </p>
+                <h4 v-html="content['Section 1 Point 4 Title']" class="text-lg leading-6 font-medium text-gray-700"></h4>
+                <p v-html="content['Section 1 Point 4 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-50 pt-12 sm:pt-16">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
+            How we work
+          </h2>
+          <img class="relative w-full mt-16 pb-24" width="490" src="/ics-image-9.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="pt-12 sm:pt-16">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
+            Our products and services
+          </h2>
+          <img class="relative w-full mx-auto mt-16 mb-24" width="490" src="/ics-services-1.png" alt="">
         </div>
       </div>
     </div>
@@ -96,7 +98,14 @@
 </template>
 
 <script>
+  import Content from '@/content/pages/services.json';
+
   export default {
+    data: function() {
+      return {
+        content: Content
+      }
+    }
   }
 </script>
 
