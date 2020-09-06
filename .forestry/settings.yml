@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: static/admin
 webhook_url: 
 sections:
 - type: directory
@@ -9,12 +9,10 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
 - type: document
   path: content/general.json
   label: General
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
