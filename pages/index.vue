@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="py-8overflow-hidden lg:py-16">
+    <div class="py-8 overflow-hidden lg:py-16">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
         <svg class="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12" width="404" height="250" fill="none" viewBox="0 0 404 250">
           <defs>
@@ -66,7 +66,7 @@
         </div>
         <div class="relative mt-4 sm:mt-6 lg:mt-10">
           <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div class="lg:col-start-2">
+            <div class="lg:col-start-2 xl:-ml-16">
               <ul>
                 <li class="sm:mt-30 md:mt-0">
                   <div class="flex">
@@ -112,7 +112,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
+            <div class="mt-10 relative lg:mt-0 lg:col-start-1">
               <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="250" fill="none" viewBox="0 0 784 250">
                 <defs>
                   <pattern id="e80155a9-dfde-425a-b5ea-1f6fadd20131" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -121,7 +121,7 @@
                 </defs>
                 <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
               </svg>
-              <img class="relative mx-auto rounded-md" width="490" src="ics-image-2.png" alt="">
+              <img class="relative rounded-md" width="490" src="ics-image-2.png" alt="">
             </div>
           </div>
         </div>
@@ -131,13 +131,13 @@
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-4xl sm:leading-10">
-            Raise integrity, compliance & security
+            Raise Integrity, Compliance, & Security
           </h3>
         </div>
         <div class="mt-10">
           <div class="lg:grid lg:grid-cols-3 lg:gap-8">
             <div>
-              <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
+              <div class="flex items-center justify-center h-24 w-24 rounded-full mx-auto bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 1 Icon']" />
                 </svg>
@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="mt-10 lg:mt-0">
-              <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
+              <div class="flex items-center justify-center h-24 w-24 rounded-full mx-auto bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 2 Icon']" />
                 </svg>
@@ -159,7 +159,7 @@
               </div>
             </div>
             <div class="mt-10 lg:mt-0">
-              <div class="flex items-center justify-center h-24 w-24 rounded-full bg-orange-500 text-white">
+              <div class="flex items-center justify-center h-24 w-24 rounded-full mx-auto bg-orange-500 text-white">
                 <svg class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 3 Point 3 Icon']" />
                 </svg>
