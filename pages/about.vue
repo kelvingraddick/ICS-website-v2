@@ -50,6 +50,7 @@
         </div>
       </div>
     </div>
+    <!--
     <div class="bg-white">
       <div class="max-w-screen-xl w-full mx-auto py-12 px-4 sm:px-6 lg:px-0 lg:py-12">
         <div class="space-y-8 sm:space-y-12">
@@ -106,6 +107,7 @@
         </div>
       </div>
     </div>
+    -->
     <div class="py-16 overflow-hidden lg:py-24">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-0 lg:max-w-screen-xl">
         <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
