@@ -76,21 +76,21 @@
     </div>
     <div class="bg-gray-50 pt-12 sm:pt-16">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="mx-auto text-center">
           <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
             How we work
           </h2>
-          <img class="relative w-full mt-16 pb-24" width="490" src="/ics-image-9.png" alt="">
+          <img class="relative w-full mt-16 pb-24" src="/ics-image-15.png" alt="">
         </div>
       </div>
     </div>
     <div class="pt-12 sm:pt-16">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center">
+        <div class="mx-auto text-center">
           <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
             Our products and services
           </h2>
-          <img class="relative w-full mx-auto mt-16 mb-24" width="490" src="/ics-services-1.png" alt="">
+          <img class="relative w-full mx-auto mt-16 mb-24" src="/ics-services-1.png" alt="">
         </div>
       </div>
     </div>
