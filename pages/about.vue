@@ -195,15 +195,28 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-50 pt-12 sm:pt-16">
+    <div class="bg-gray-50 pt-12 sm:pt-16 pb-24">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
             Why what we do is important
           </h2>
-          <img class="relative w-full mx-auto mt-16 mb-24" width="490" src="/ics-image-8.png" alt="">
+          <img class="relative w-full mx-auto mt-16" width="490" :src="content['Section 3 Image']" alt="">
         </div>
       </div>
+    </div>
+    <div class="container mx-auto pt-12">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
+            Video explanation
+          </h2>
+        </div>
+      </div>
+      <video class="mx-auto mt-12" controls>
+        <source :src="content['Section 4 Video']" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </main>
 </template>
