@@ -173,81 +173,21 @@
         </div>
       </div>
     </div>
-    <div class="py-16 overflow-hidden lg:py-24">
-      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
-          <defs>
-            <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
-        </svg>
-        <div class="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div class="relative">
-            <h4 class="text-2xl leading-8 font-extrabold text-gray-700 tracking-tight sm:text-3xl sm:leading-9">
-              Customized solutions
-            </h4>
-            <p v-html="content['Section 4 Sub-Title']" class="mt-3 text-lg leading-7 text-gray-500"></p>
-            <ul class="mt-10">
-              <li>
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-14 w-14 text-orange-500">
-                      <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 1 Icon']" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h5 v-html="content['Section 4 Point 1 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
-                    <p v-html="content['Section 4 Point 1 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
-                  </div>
-                </div>
-              </li>
-              <li class="mt-10">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-14 w-14 text-orange-500">
-                      <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 2 Icon']" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h5 v-html="content['Section 4 Point 2 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
-                    <p v-html="content['Section 4 Point 2 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
-                  </div>
-                </div>
-              </li>
-              <li class="mt-10">
-                <div class="flex">
-                  <div class="flex-shrink-0">
-                    <div class="flex items-center justify-center h-14 w-14 text-orange-500">
-                      <svg class="h-14 w-14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 4 Point 3 Icon']" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="ml-4">
-                    <h5 v-html="content['Section 4 Point 3 Title']" class="text-lg leading-6 font-medium text-gray-700"></h5>
-                    <p v-html="content['Section 4 Point 3 Sub-Title']" class="mt-2 text-base leading-6 text-gray-500"></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-10 -mx-4 relative lg:mt-0">
-            <svg class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden" width="784" height="404" fill="none" viewBox="0 0 784 404">
-              <defs>
-                <pattern id="ca9667ae-9f92-4be7-abcb-9e3d727f2941" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
-            </svg>
-            <img class="relative mx-auto rounded-md" width="490" src="/ics-image-1.jpg" alt="">
-          </div>
+    <div class="pt-12 sm:pt-16">
+      <svg class="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="b1e6e422-73f8-40a6-b5d9-c8586e37e0e7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
+      </svg>
+      <div class="max-w-screen-xl mx-auto">
+        <div class="mx-auto text-center">
+          <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
+            Customized solutions
+          </h2>
+          <img class="relative w-full mx-auto mt-16" :src="content['Section 4 Image']" alt="">
         </div>
       </div>
     </div>
