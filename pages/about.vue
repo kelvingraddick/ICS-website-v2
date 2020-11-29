@@ -141,6 +141,59 @@
         Your browser does not support the video tag.
       </video>
     </div>
+    <div class="container mx-auto pt-12">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto text-center">
+          <h2 class="text-3xl leading-9 font-extrabold text-gray-700 sm:text-4xl sm:leading-10">
+            Success Stories
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="py-12 bg-white">
+      <div class="max-w-xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
+        <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
+          <div>
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: globe-alt -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 5 Point 1 Icon']" />
+              </svg>
+            </div>
+            <div class="mt-5">
+              <dt class="text-lg leading-6 font-medium text-gray-900" v-html="content['Section 5 Point 1 Title']"></dt>
+              <dd class="mt-2 text-base text-gray-500" v-html="content['Section 5 Point 1 Sub-Title']"></dd>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: scale -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 5 Point 2 Icon']" />
+              </svg>
+            </div>
+            <div class="mt-5">
+              <dt class="text-lg leading-6 font-medium text-gray-900" v-html="content['Section 5 Point 2 Title']"></dt>
+              <dd class="mt-2 text-base text-gray-500" v-html="content['Section 5 Point 2 Sub-Title']"></dd>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+              <!-- Heroicon name: lightning-bolt -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="content['Section 5 Point 3 Icon']" />
+              </svg>
+            </div>
+            <div class="mt-5">
+              <dt class="text-lg leading-6 font-medium text-gray-900" v-html="content['Section 5 Point 3 Title']"></dt>
+              <dd class="mt-2 text-base text-gray-500" v-html="content['Section 5 Point 3 Sub-Title']"></dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
   </main>
 </template>
 
