@@ -55,7 +55,15 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/gtm'
   ],
+  /*
+  ** Google Tag Manager
+  */
+  gtm: {
+    id: 'GTM-PXWV4VF',
+    enabled: true
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

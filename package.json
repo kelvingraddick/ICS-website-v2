@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
     "@tailwindcss/ui": "^0.5.0",
     "nuxt": "^2.14.0"
   },
