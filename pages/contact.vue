@@ -1,12 +1,7 @@
 <template>
   <main>
 		<div class="relative bg-white">
-      <div class="lg:absolute lg:inset-0">
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="w-full object-contain rounded-md" src="ics-image-14.png" alt="">
-        </div>
-      </div>
-      <div class="relative pt-12 pb-16 px-4 sm:pt-16 lg:pt-0 sm:px-6 lg:px-0 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+      <div class="relative pt-12 pb-16 px-4 sm:pt-16 lg:pt-0 sm:px-6 lg:px-6 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2 xl:px-0">
         <div class="lg:pr-8">
           <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
             <h2 class="text-3xl text-gray-700 leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
