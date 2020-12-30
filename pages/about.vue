@@ -17,7 +17,7 @@
                   <div class="sm:col-span-2">
                     <div class="space-y-4">
                       <div class="text-lg text-gray-700 leading-6 font-medium space-y-1">
-                        <h4>Andre Walthall</h4>
+                        <h4>Aundra Walthall</h4>
                         <p class="text-orange-500">Chief Executive Officer</p>
                       </div>
                       <div class="text-lg leading-7">
