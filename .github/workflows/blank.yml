@@ -55,8 +55,8 @@ jobs:
         set cmd:fail-exit yes
         set net:max-retries 2
         set net:timeout 20
-        set sftp:connect-program "ssh -a -x -i ${key_file} -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=${known_hosts_file}"
-        open "sftp://${SFTP_USERNAME}@${SFTP_HOST}:${SFTP_PORT}"
+        set sftp:connect-program "ssh -a -x -l ${SFTP_USERNAME} -i ${key_file} -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=${known_hosts_file}"
+        open "sftp://${SFTP_HOST}:${SFTP_PORT}"
         mirror --reverse --upload-older --overwrite --no-perms --parallel=4 --verbose=1 "dist" "${SFTP_REMOTE_PATH}"
         bye
         LFTP
