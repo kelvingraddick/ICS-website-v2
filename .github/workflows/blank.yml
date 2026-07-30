@@ -21,11 +21,42 @@ jobs:
     - name: Export project
       run: 
         npm run generate
-    - name: ftp-action
-      uses: sebastianpopp/ftp-action@v2.0.0
-      with:
-        host: "${{ secrets.FTP_SERVER }}"
-        user: "${{ secrets.FTP_USERNAME }}"
-        password: "${{ secrets.FTP_PASSWORD }}"
-        localDir: "dist"
-        remoteDir: "ICS"
+    - name: Install SFTP client
+      run: |
+        sudo apt-get update
+        sudo apt-get install --yes lftp
+    - name: Deploy via SFTP
+      env:
+        SFTP_HOST: "104.196.25.115"
+        SFTP_PORT: "22"
+        SFTP_USERNAME: "kgraddick"
+        SFTP_REMOTE_PATH: "/var/www/icscanhelp.com"
+        SFTP_PRIVATE_KEY: "${{ secrets.SFTP_PRIVATE_KEY }}"
+        SFTP_KNOWN_HOSTS: "${{ secrets.SFTP_KNOWN_HOSTS }}"
+      run: |
+        set -euo pipefail
+
+        key_file="${RUNNER_TEMP}/ics-sftp-key"
+        known_hosts_file="${RUNNER_TEMP}/ics-sftp-known-hosts"
+
+        cleanup() {
+          rm -f "$key_file" "$known_hosts_file"
+        }
+        trap cleanup EXIT
+
+        test -n "$SFTP_PRIVATE_KEY"
+        test -n "$SFTP_KNOWN_HOSTS"
+
+        printf '%s\n' "$SFTP_PRIVATE_KEY" > "$key_file"
+        printf '%s\n' "$SFTP_KNOWN_HOSTS" > "$known_hosts_file"
+        chmod 600 "$key_file" "$known_hosts_file"
+
+        lftp <<LFTP
+        set cmd:fail-exit yes
+        set net:max-retries 2
+        set net:timeout 20
+        set sftp:connect-program "ssh -a -x -i ${key_file} -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=${known_hosts_file}"
+        open "sftp://${SFTP_USERNAME}@${SFTP_HOST}:${SFTP_PORT}"
+        mirror --reverse --upload-older --overwrite --no-perms --parallel=4 --verbose=1 "dist" "${SFTP_REMOTE_PATH}"
+        bye
+        LFTP
